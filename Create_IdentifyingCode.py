@@ -3,13 +3,19 @@
 import random,string
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
+__author__ = atiger77
+
+'''
+第一版简单实现验证码生成，明天把代码做下模块化
+'''
 
 def CreateValidateCode():
-    width,height = 120,30
-    bgcolor = (255,255,255)
-    fontcolor = (0,0,255)
-    font_size = 18 
-
+    width,height = 120,30   #图片长度，宽度
+    bgcolor = (255,255,255) #背景
+    fontcolor = (0,0,255)   #字体颜色
+    font_size = 18          #字体大小
+    
+    #生成随机4位验证码
     lowercase = string.lowercase
     uppercase = string.uppercase 
     numbers = string.digits
